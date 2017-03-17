@@ -4,8 +4,6 @@ import { StateProvider, Ng1StateDeclaration } from 'angular-ui-router';
 import * as AboutComponent from './about';
 import * as HomeComponent from './home';
 
-import './theme.css!css';
-
 var moduleName = 'app.rims';
 
 export const moduleStates = {
