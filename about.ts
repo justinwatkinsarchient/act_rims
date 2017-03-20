@@ -1,11 +1,6 @@
 import * as angular from 'angular';
 import template from './about.html!text';
 
-export class  About implements ng.IComponentOptions {
-    public controller = AboutController;
-    template = template;
-}
-
 class AboutController implements ng.IComponentController {
     static $inject = [];
     constructor() {
@@ -13,4 +8,9 @@ class AboutController implements ng.IComponentController {
     }
 }
 
-export var name = 'about';
+export var  Component = <ng.IComponentOptions> {
+    controller:AboutController,
+    template:template,
+}
+
+export var Name = 'rims.about'; 
